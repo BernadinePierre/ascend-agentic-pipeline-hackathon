@@ -9,7 +9,7 @@
 
 ## Overview
 
-UK insurance firms must continuously monitor regulatory publications from the Financial Conduct Authority-[FCA](https://www.fca.org.uk/) and the Prudential Regulation Authority -[PRA](https://pra.directory/). These publications are narrative, frequent, and often difficult to translate into clear, auditable actions, particularly under the FCA’s Consumer Duty regime.
+UK insurance firms must continuously monitor regulatory publications from the Financial Conduct Authority - [FCA](https://www.fca.org.uk/) and the Prudential Regulation Authority - [PRA](https://pra.directory/). These publications are narrative, frequent, and often difficult to translate into clear, auditable actions, particularly under the FCA’s Consumer Duty regime.
 
 This project demonstrates a **deployed, scheduled, agentic pipeline** built in Ascend that:
 - Ingests UK insurance regulatory publications
@@ -72,6 +72,8 @@ This ensures obligations are assessed against the firm’s real operating model.
 The pipeline is deployed as an Ascend flow:
 
 'uk_insurance_regulatory_monitoring'
+
+[](images/pipeline flow screenshot.png)
 
 ### Core Components
 
