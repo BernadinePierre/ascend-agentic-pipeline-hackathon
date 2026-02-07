@@ -1,30 +1,34 @@
 # UK Insurance Regulatory Monitoring Pipeline  
-**Agentic Regulatory Interpretation and Escalation using Ascend**
+**Agentic Regulatory Interpretation & Escalation using Ascend**
+
+> Ascend Hackathon Submission  
+> Category: Agentic Data Pipelines  
+> Jurisdiction: United Kingdom (Insurance)
 
 ---
 
 ## Overview
 
-UK insurance firms must continuously monitor regulatory publications from the Financial Conduct Authority (FCA) and the Prudential Regulation Authority (PRA) to identify enforceable obligations and take timely action. This process is typically manual, slow, and difficult to audit—particularly under the FCA’s Consumer Duty regime.
+UK insurance firms must continuously monitor regulatory publications from the Financial Conduct Authority-[FCA](https://www.fca.org.uk/) and the Prudential Regulation Authority -[PRA](https://pra.directory/). These publications are narrative, frequent, and often difficult to translate into clear, auditable actions, particularly under the FCA’s Consumer Duty regime.
 
-This project demonstrates a **deployed, scheduled, agentic data pipeline** built in Ascend that:
+This project demonstrates a **deployed, scheduled, agentic pipeline** built in Ascend that:
 - Ingests UK insurance regulatory publications
-- Extracts structured regulatory obligations using an AI agent
-- Quantifies regulatory impact in a defensible, auditable way
+- Uses an AI agent to extract enforceable obligations
+- Quantifies regulatory impact in a defensible way
 - Automatically escalates high-impact obligations via email alerts
 
-The pipeline is deliberately scoped to **UK insurance regulation only** and is designed to be realistic, production-minded, and audit-ready.
+The pipeline is intentionally scoped to **UK insurance regulation only** and designed to be production-minded and audit-ready.
 
 ---
 
-## Problem Statement
+## Problem Being Solved
 
-UK insurers face three recurring challenges:
-1. Regulatory publications are narrative and difficult to interpret consistently  
-2. Manual monitoring introduces delays and missed obligations  
-3. There is often weak lineage from regulation to internal action during audits  
+Compliance teams face three recurring challenges:
+1. Manual monitoring of FCA and PRA publications  
+2. Inconsistent interpretation of regulatory intent  
+3. Weak traceability from regulation to internal action  
 
-This pipeline addresses these issues by converting regulatory text into structured obligations and autonomously escalating material regulatory change.
+This pipeline automates the interpretation and escalation of regulatory change, reducing manual effort while improving auditability.
 
 ---
 
@@ -35,38 +39,37 @@ This pipeline addresses these issues by converting regulatory text into structur
 Only obligation-bearing UK publications are processed:
 
 - **FCA**
-  - Policy Statements
-  - Handbook updates
-  - Dear CEO letters
-  - Consumer Duty publications
+  - Policy Statements  
+  - Handbook updates  
+  - Dear CEO letters  
+  - Consumer Duty publications  
 
 - **PRA**
-  - Supervisory Statements
-  - Policy Statements
+  - Supervisory Statements  
+  - Policy Statements  
 
-The following are explicitly excluded to reduce noise:
-- Speeches
-- Blogs
-- Press commentary
-- International or EU regulation
+Explicitly excluded:
+- Speeches  
+- Blogs and commentary  
+- International / EU regulation  
 
 ---
 
 ### Internal Reference Data (Snowflake)
 
-Internal data is used to contextualise and score obligations:
+Internal reference data is used to contextualise obligations:
 
-- Controls library (regulatory topic → internal control)
+- Controls library (regulatory topic → control)
 - SMF ownership mappings
-- Product and business scope (UK insurance context)
+- Product and business scope (UK insurance)
 
-This allows regulatory impact to be assessed against the firm’s actual operating model.
+This ensures obligations are assessed against the firm’s real operating model.
 
 ---
 
-## Pipeline Architecture
+## Pipeline Architecture (Ascend)
 
-The pipeline is deployed as an Ascend flow named:
+The pipeline is deployed as an Ascend flow:
 
 'uk_insurance_regulatory_monitoring'
 
