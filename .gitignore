@@ -1,0 +1,12 @@
+# Python
+.ruff_cache/
+.venv/
+dist/
+__pycache__/
+
+# Local AscendLake
+ascendlake/
+
+# JetBrains IDE
+.idea/*
+!.idea/runConfigurations/
