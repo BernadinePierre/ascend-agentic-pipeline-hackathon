@@ -4,7 +4,8 @@
 > Ascend Hackathon Submission  
 > Category: Agentic Data Pipelines  
 > Jurisdiction: United Kingdom (Insurance)
-> https://asc-b5f5b931-1391-426c.app.ascend.io/project/default/production/flows/uk_insurance_regulatory_monitoring
+
+https://asc-b5f5b931-1391-426c.app.ascend.io/project/default/production/flows/uk_insurance_regulatory_monitoring
 
 ---
 
@@ -26,12 +27,7 @@ The pipeline is intentionally scoped to **UK insurance regulation only** and des
 
 ## Problem Being Solved
 
-Compliance teams face three recurring challenges:
-1. Manual monitoring of FCA and PRA publications  
-2. Inconsistent interpretation of regulatory intent  
-3. Weak traceability from regulation to internal action  
-
-This pipeline automates the interpretation and escalation of regulatory change, reducing manual effort while improving auditability.
+Compliance teams must manually monitor FCA and PRA publications, interpret regulatory intent, and demonstrate traceability from regulation to internal action. This process is slow, inconsistent, and difficult to audit. The pipeline automates interpretation and escalation of regulatory change, reducing manual effort while improving auditability.
 
 ---
 
@@ -39,12 +35,11 @@ This pipeline automates the interpretation and escalation of regulatory change, 
 
 ### Regulatory Sources (Read Connectors)
 
-Only obligation-bearing UK publications are processed:
+The pipeline processes the following UK regulatory publications:
 
 - **FCA**
   - Policy Statements  
-  - Handbook updates  
-  - Dear CEO letters  
+  - Handbook updates   
   - Consumer Duty publications  
 
 - **PRA**
@@ -110,15 +105,7 @@ The pipeline is deployed as an Ascend flow:
 
 ### UK Regulatory Interpretation Agent
 
-A custom agent built using Ascend’s Otto AI, constrained by rules to:
-
-- Operate on UK regulation only
-- Preserve FCA and PRA intent without advisory interpretation
-- Output structured JSON obligations
-- Include verbatim citations
-- Avoid inference where information is unclear
-
-This ensures outputs are suitable for audit and supervisory review.
+A custom agent built using Ascend’s Otto AI, constrained to UK regulation only, preserves FCA and PRA intent, outputs structured JSON obligations with verbatim citations, and avoids inference where information is unclear.
 
 See full agent configuration at:
 ![](artefacts/uk-regulatory-interpretation.md)
@@ -139,12 +126,10 @@ Coordinates execution and escalation:
 
 Each alert includes:
 - Regulator (FCA / PRA)
-- Instrument type
 - Obligation summary
 - Impact score
 - Effective date
 - Consumer Duty flag
-- SMF owner
 - Source URL
 
 ![](images/email_alert_screenshot.png)
