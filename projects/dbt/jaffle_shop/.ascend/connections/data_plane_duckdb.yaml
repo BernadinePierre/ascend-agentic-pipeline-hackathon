@@ -1,6 +1,0 @@
-connection:
-  duckdb:
-    max_concurrent_queries: 20
-    ducklake:
-      $<: $ascend_managed.ducklake
-    schema: main

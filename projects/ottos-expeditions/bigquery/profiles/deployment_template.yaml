@@ -1,4 +1,0 @@
-profile:
-  parameters:
-    gcp:
-      $<: $parameters.gcp

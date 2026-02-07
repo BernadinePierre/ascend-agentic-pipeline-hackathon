@@ -1,5 +1,0 @@
-profile:
-  parameters:
-    snowflake:
-      $<: $parameters.snowflake
-      schema: WORKSPACE_YOUR_NAME

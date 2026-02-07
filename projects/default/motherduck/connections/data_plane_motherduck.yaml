@@ -1,5 +1,0 @@
-connection:
-  duckdb:
-    max_concurrent_queries: ${parameters.duckdb.max_concurrent_queries:-32}
-    motherduck:
-      api_key: ${vaults.environment.MOTHERDUCK_API_KEY}

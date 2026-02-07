@@ -1,4 +1,0 @@
-profile:
-  parameters:
-    snowflake:
-      $<: $parameters.snowflake
