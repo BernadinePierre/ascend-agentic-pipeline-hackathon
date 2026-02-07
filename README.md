@@ -4,6 +4,7 @@
 > Ascend Hackathon Submission  
 > Category: Agentic Data Pipelines  
 > Jurisdiction: United Kingdom (Insurance)
+> https://asc-b5f5b931-1391-426c.app.ascend.io/project/default/production/flows/uk_insurance_regulatory_monitoring
 
 ---
 
@@ -18,6 +19,8 @@ This project demonstrates a **deployed, scheduled, agentic pipeline** built in A
 - Automatically escalates high-impact obligations via email alerts
 
 The pipeline is intentionally scoped to **UK insurance regulation only** and designed to be production-minded and audit-ready.
+
+![](images/production_screenshot.png)
 
 ---
 
@@ -117,8 +120,8 @@ A custom agent built using Ascend’s Otto AI, constrained by rules to:
 
 This ensures outputs are suitable for audit and supervisory review.
 
-See full agent rules at:
-![](artefacts/pipeline_flow_screenshot.png)
+See full agent configuration at:
+![](artefacts/uk-regulatory-interpretation.md)
 
 ---
 
@@ -148,7 +151,7 @@ Each alert includes:
 
 ---
 
-## Impact Scoring Methodology (Artefact 2)
+## Impact Scoring Methodology
 
 [Impact Scoring Methodology: UK Insurance Regulatory Obligations](https://asc-b5f5b931-1391-426c.app.ascend.io/otto/artifact/tooluse_hOnMexGoo6Greioz1HaRSa)
 
@@ -167,7 +170,7 @@ A threshold of **70** distinguishes obligations requiring operational action fro
 
 ---
 
-## Data Model & Lineage (Artefact 1)
+## Data Model & Lineage
 
 [Entity Relationship Diagram: UK Insurance Regulatory Monitoring Pipeline](https://asc-b5f5b931-1391-426c.app.ascend.io/otto/artifact/tooluse_JXEJs8PYRIV91GLtNo1xIo)
 
