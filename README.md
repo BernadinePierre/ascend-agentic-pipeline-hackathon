@@ -144,11 +144,13 @@ Each alert includes:
 - SMF owner
 - Source URL
 
-![](images/alert_email_screenshot.png)
+![](images/email_alert_screenshot.png)
 
 ---
 
 ## Impact Scoring Methodology (Artefact 2)
+
+[Impact Scoring Methodology: UK Insurance Regulatory Obligations](https://asc-b5f5b931-1391-426c.app.ascend.io/otto/artifact/tooluse_hOnMexGoo6Greioz1HaRSa)
 
 Regulatory impact is quantified using a deterministic 0–100 scoring model combining:
 
@@ -161,14 +163,13 @@ Regulatory impact is quantified using a deterministic 0–100 scoring model comb
 **Consumer Duty obligations** are weighted highest (80–100).  
 A threshold of **70** distinguishes obligations requiring operational action from those that are informational.
 
-📄 See:  
-**Artefact 2 – Impact Scoring Methodology: UK Insurance Regulatory Obligations (Quantified, Defensible, Auditable)**
-
-![](images/score_screenshot.png)
+![](images/scoring_screenshot.png)
 
 ---
 
 ## Data Model & Lineage (Artefact 1)
+
+[Entity Relationship Diagram: UK Insurance Regulatory Monitoring Pipeline](https://asc-b5f5b931-1391-426c.app.ascend.io/otto/artifact/tooluse_JXEJs8PYRIV91GLtNo1xIo)
 
 The data model ensures full traceability from source regulation to escalation.
 
@@ -178,10 +179,7 @@ Key entities:
 - Impact scores and prioritisation flags
 - Internal controls and SMF ownership
 
-📄 See:  
-**Artefact 1 – Entity Relationship Diagram: UK Insurance Regulatory Monitoring Pipeline**
-
-![](images/data_model_screenshot.png)
+![](images/erd_screenshot.png)
 
 ---
 
@@ -190,14 +188,14 @@ Key entities:
 - Agentic AI is most valuable in regulated environments when tightly constrained
 - Governance and explainability matter more than free-form generation
 - The real operational value comes from **decision-making and escalation**, not summarisation
-- Ascend and Otto significantly reduced time from idea to deployed pipeline while maintaining audit discipline
+- Ascend and Otto significantly reduced the time from idea to deployed pipeline while maintaining audit discipline
 
 ---
 
 ## Demo Artefacts Included
 
 - Ascend Dataflow and Process Slide
-- Custom agent / rules configuration
+- Custom agent/rules configuration
 - Entity Relationship Diagram 
 - Impact Scoring Methodology
 - Example automated email alert
