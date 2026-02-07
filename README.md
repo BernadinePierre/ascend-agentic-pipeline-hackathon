@@ -19,7 +19,7 @@ This project demonstrates a **deployed, scheduled, agentic pipeline** built in A
 - Quantifies regulatory impact in a defensible way
 - Automatically escalates high-impact obligations via email alerts
 
-The pipeline is intentionally scoped to **UK insurance regulation only** and designed to be production-minded and audit-ready.
+The pipeline is intentionally scoped to UK insurance regulation only and designed to be production-minded and audit-ready.
 
 ![](images/production_screenshot.png)
 
@@ -107,8 +107,7 @@ The pipeline is deployed as an Ascend flow:
 
 A custom agent built using Ascend’s Otto AI, constrained to UK regulation only, preserves FCA and PRA intent, outputs structured JSON obligations with verbatim citations, and avoids inference where information is unclear.
 
-See full agent configuration at:
-![](artefacts/uk-regulatory-interpretation.md)
+See full agent configuration at: [uk-regulatory-interpretation.md](artefacts/uk-regulatory-interpretation.md)
 
 ---
 
@@ -175,7 +174,7 @@ Key entities:
 
 - Agentic AI is most valuable in regulated environments when tightly constrained
 - Governance and explainability matter more than free-form generation
-- The real operational value comes from **decision-making and escalation**, not summarisation
+- The real operational value comes from decision-making and escalation
 - Ascend and Otto significantly reduced the time from idea to deployed pipeline while maintaining audit discipline
 
 ---
