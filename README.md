@@ -73,7 +73,7 @@ The pipeline is deployed as an Ascend flow:
 
 'uk_insurance_regulatory_monitoring'
 
-[](images/pipeline_flow_screenshot.png)
+![](images/pipeline_flow_screenshot.png)
 
 ### Core Components
 
