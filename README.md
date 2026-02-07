@@ -65,6 +65,8 @@ Internal reference data is used to contextualise obligations:
 
 This ensures obligations are assessed against the firm’s real operating model.
 
+![](images/snowflake_screenshot.png)
+
 ---
 
 ## Pipeline Architecture (Ascend)
@@ -96,6 +98,8 @@ The pipeline is deployed as an Ascend flow:
 
 6. **Write Connector**
    - Persists obligations and scores to Snowflake for audit and reporting
+  
+   ![](images/process_slide.png)
 
 ---
 
@@ -112,6 +116,9 @@ A custom agent built using Ascend’s Otto AI, constrained by rules to:
 - Avoid inference where information is unclear
 
 This ensures outputs are suitable for audit and supervisory review.
+
+See full agent rules at:
+![](artefacts/pipeline_flow_screenshot.png)
 
 ---
 
@@ -137,6 +144,8 @@ Each alert includes:
 - SMF owner
 - Source URL
 
+![](images/alert_email_screenshot.png)
+
 ---
 
 ## Impact Scoring Methodology (Artefact 2)
@@ -155,6 +164,8 @@ A threshold of **70** distinguishes obligations requiring operational action fro
 📄 See:  
 **Artefact 2 – Impact Scoring Methodology: UK Insurance Regulatory Obligations (Quantified, Defensible, Auditable)**
 
+![](images/score_screenshot.png)
+
 ---
 
 ## Data Model & Lineage (Artefact 1)
@@ -170,6 +181,8 @@ Key entities:
 📄 See:  
 **Artefact 1 – Entity Relationship Diagram: UK Insurance Regulatory Monitoring Pipeline**
 
+![](images/data_model_screenshot.png)
+
 ---
 
 ## What I Learned
@@ -183,28 +196,11 @@ Key entities:
 
 ## Demo Artefacts Included
 
-- Ascend Dataflow graph (scheduled deployment)
+- Ascend Dataflow and Process Slide
 - Custom agent / rules configuration
-- Entity Relationship Diagram (Artefact 1)
-- Impact Scoring Methodology (Artefact 2)
-- Example extracted obligation
+- Entity Relationship Diagram 
+- Impact Scoring Methodology
 - Example automated email alert
-
----
-
-## Repository Structure (Suggested)
-
-/
-├── README.md
-├── images/
-│ ├── ascend_dataflow.png
-│ ├── automation_config.png
-│ ├── example_email_alert.png
-│ └── obligation_example.png
-├── docs/
-│ ├── ERD_uk_regulatory_monitoring.png
-│ └── Impact_Scoring_Methodology.pdf
-
 
 ---
 
