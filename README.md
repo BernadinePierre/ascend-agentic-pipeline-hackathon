@@ -14,7 +14,7 @@ https://asc-b5f5b931-1391-426c.app.ascend.io/project/default/production/flows/uk
 This solution was awarded 1st place in the Ascend Agentic Engineering Hackathon.  
 A feature write-up highlighting the solution is available here:
 
-[https://app.therundown.ai/guides/build-a-brand-twin-that-writes-every-post-in-your-exact-voice](https://www.ascend.io/blog/three-pipelines-three-industries-one-platform-meet-the-winners-of-our-latest-hackathon)
+https://www.ascend.io/blog/three-pipelines-three-industries-one-platform-meet-the-winners-of-our-latest-hackathon
 
 ---
 
