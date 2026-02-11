@@ -9,6 +9,15 @@ https://asc-b5f5b931-1391-426c.app.ascend.io/project/default/production/flows/uk
 
 ---
 
+🏆 **Hackathon Winner**
+
+This solution was awarded 1st place in the Ascend Agentic Engineering Hackathon.  
+A feature write-up highlighting the solution is available here:
+
+[https://app.therundown.ai/guides/build-a-brand-twin-that-writes-every-post-in-your-exact-voice](https://www.ascend.io/blog/three-pipelines-three-industries-one-platform-meet-the-winners-of-our-latest-hackathon)
+
+---
+
 ## Overview
 
 UK insurance firms must continuously monitor regulatory publications from the Financial Conduct Authority - [FCA](https://www.fca.org.uk/) and the Prudential Regulation Authority - [PRA](https://pra.directory/). These publications are narrative, frequent, and often difficult to translate into clear, auditable actions, particularly under the FCA’s Consumer Duty regime.
